@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="plushomework.css" />
+  </head>
+  <body>
+    <div class="container weather">
+      <div class="firststack">
+        <form id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                class="form-control shadow-sm search"
+                id="city-input"
+                placeholder="Type in any city..."
+                autocomplete="off"
+                autofocus="on"
+              />
+            </div>
+            <div class="col-3">
+              <input
+              class="form-control shadow-sm submit"
+                type="submit"
+                value="Search"
+              />
+            </div>
+            <div class="col-3">
+            <button class="form-control shadow-sm submit">Current</button></div>
+          </div>
+        </form>
+      </div>
+      <div class="secondstack">
+        <div class="row">
+          <div class="col-6">
+            <h1 id="city"></h1>
+           
+          </div>
+          <div class="col-6">
+          <span id="temperature" class="temp"></span><a href="#">⁰C</a>
+          <!-- <span class="measure">
+     <a href="#" id="celsius-unit">⁰C</a> |<a href="#" id="fahrenheit-unit">⁰F</a>
+          </span-->
+             
+            </div>
+          <div class="col-6"> <ul>
+            <li id="current"></li>
+          <li id="temp-description"></li>
+          </ul> 
+          </div>
+          <div class="col-6">
+            <ul>
+              <li >Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
+            </ul></div>
+        </div>
+      </div>
+      <div class="thirdstack">
+        <div class="row figures">
+          <div class="col-2">
+            <h3>Fri</h3>
+            <p>🌧 <br />18⁰|24⁰</p>
+          </div>
+          <div class="col-2">
+            <h3>Sat</h3>
+            <p>☀ <br />31⁰|40⁰</p>
+          </div>
+          <div class="col-2">
+            <h3>Sun</h3>
+            <p>☁ <br />22⁰|34⁰</p>
+          </div>
+          <div class="col-2">
+            <h3>Mon</h3>
+            <p>🌧 <br />15⁰|29⁰</p>
+          </div>
+          <div class="col-2">
+            <h3>Tue</h3>
+            <p>☀ <br />27⁰|38⁰</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="plushomework.js"></script>
+  </body>
+</html>
